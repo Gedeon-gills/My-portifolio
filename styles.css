@@ -376,6 +376,7 @@ body {
   .hero {
     flex-direction: column;
     text-align: center;
+    padding-top: 20px;
   }
 
   .hero-image {
