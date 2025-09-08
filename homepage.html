@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gedeon Portifolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="homepage"> 
+        <a class="brand">Gedeon I.N</a>
+
+                <nav class="navbar">
+                    <a href="#homepage" class="active">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <div class="menu" id="menu">
+                    ☰
+                </div>
+    </header>
+
+    
+    <section class="hero" id="homepage">
+        <div class="hero-content">
+            <h1>Hi, I'm Gedeon.I.Ndayambaje</h1>
+            <h3>a
+                <span style="--i:3" data-text="Frontend Developer">Frontend Developer</span>
+                <span style="--i:2" data-text="UI/UX Designer">UI/UX Designer</span>
+                <span style="--i:1" data-text="Graphic Designer">Graphic Designer</span>
+            </h3>
+            <p>You are welcome to my Portifolio. Here you can find information about our services and how to contact us.</p>
+            <div class = "buttons">
+                <a href='#skills'>Learn More</a>
+                <a href='#contact'>Let's Talk</a>    
+            </div>
+            
+            <div class="hero-sci">
+                <a href="https://www.instagram.com/gedeon_gills/"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://x.com/NdayambajeGede6"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.linkedin.com/in/ineza-ndayambaje-gedeon-0897a732b/"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#"><i class='bx bxl-github' ></i></a>
+            </div>       
+        </div>
+        <div class="hero-image">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="image/DSC_5157.png" alt="Gedeon">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h1>About Me:</h1>
+        <div class="about-section">
+            <div class="about-image">
+                <div class="img-box">
+                    <div class="img-item">
+                        <img src="image/DSC_5157.png" alt="Gedeon">
+                    </div>
+                </div>
+            </div>
+            <div class="about-content">
+                <h2>Hi, I'm Gedeon.I.Ndayambaje</h2>
+                <p>I am a passionate Frontend Developer with a keen interest in creating beautiful and functional web applications. <br>My journey in web development has been driven by a desire to build<br> user-friendly interfaces and enhance user experiences.</p>
+                <p>With a strong foundation in HTML, CSS, and JavaScript, I enjoy turning complex problems into simple, elegant solutions. I am always eager <br>to learn new technologies and improve my skills.</p>
+                <div class = "btns">
+                    <a href='https://docs.google.com/document/d/1GlBIbUrcHyRqKPtwRCvhJkvTnrIVDnLaRxq7olh3EeY/edit?usp=sharing'>Get a cv</a>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <h1>My Skills</h1>
+        <p class="title">Here are some of the skills I have acquired over the years:</p>
+        
+        <div class="skills-grid">
+        <div class="skill-item">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+PHBhdGggZmlsbD0iI2U0NGQyNiIgZD0iTTE5LjAzNyAxMTMuODc2TDkuMDMyIDEuNjYxaDEwOS45MzZsLTEwLjAxNiAxMTIuMTk4bC00NS4wMTkgMTIuNDh6Ii8+PHBhdGggZmlsbD0iI2YxNjUyOSIgZD0ibTY0IDExNi44bDM2LjM3OC0xMC4wODZsOC41NTktOTUuODc4SDY0eiIvPjxwYXRoIGZpbGw9IiNlYmViZWIiIGQ9Ik02NCA1Mi40NTVINDUuNzg4TDQ0LjUzIDM4LjM2MUg2NFYyNC41OTlIMjkuNDg5bC4zMyAzLjY5MmwzLjM4MiAzNy45MjdINjR6bTAgMzUuNzQzbC0uMDYxLjAxN2wtMTUuMzI3LTQuMTRsLS45NzktMTAuOTc1SDMzLjgxNmwxLjkyOCAyMS42MDlsMjguMTkzIDcuODI2bC4wNjMtLjAxN3oiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNjMuOTUyIDUyLjQ1NXYxMy43NjNoMTYuOTQ3bC0xLjU5NyAxNy44NDlsLTE1LjM1IDQuMTQzdjE0LjMxOWwyOC4yMTUtNy44MmwuMjA3LTIuMzI1bDMuMjM0LTM2LjIzM2wuMzM1LTMuNjk2aC0zLjcwOHptMC0yNy44NTZ2MTMuNzYyaDMzLjI0NGwuMjc2LTMuMDkybC42MjgtNi45NzhsLjMyOS0zLjY5MnoiLz48L3N2Zz4=" alt="HTML">
+            <p>HTML</p>
+        </div>
+        <div class="skill-item">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+PHBhdGggZmlsbD0iIzE1NzJiNiIgZD0iTTE4LjgxNCAxMTQuMTIzTDguNzYgMS4zNTJoMTEwLjQ4bC0xMC4wNjQgMTEyLjc1NGwtNDUuMjQzIDEyLjU0M3oiLz48cGF0aCBmaWxsPSIjMzNhOWRjIiBkPSJtNjQuMDAxIDExNy4wNjJsMzYuNTU5LTEwLjEzNmw4LjYwMS05Ni4zNTRoLTQ1LjE2eiIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik02NC4wMDEgNTEuNDI5aDE4LjMwMmwxLjI2NC0xNC4xNjNINjQuMDAxVjIzLjQzNWgzNC42ODJsLS4zMzIgMy43MTFsLTMuNCAzOC4xMTRoLTMwLjk1eiIvPjxwYXRoIGZpbGw9IiNlYmViZWIiIGQ9Im02NC4wODMgODcuMzQ5bC0uMDYxLjAxOGwtMTUuNDAzLTQuMTU5bC0uOTg1LTExLjAzMUgzMy43NTJsMS45MzcgMjEuNzE3bDI4LjMzMSA3Ljg2M2wuMDYzLS4wMTh6Ii8+PHBhdGggZmlsbD0iI2ZmZiIgZD0ibTgxLjEyNyA2NC42NzVsLTEuNjY2IDE4LjUyMmwtMTUuNDI2IDQuMTY0djE0LjM5bDI4LjM1NC03Ljg1OGwuMjA4LTIuMzM3bDIuNDA2LTI2Ljg4MXoiLz48cGF0aCBmaWxsPSIjZWJlYmViIiBkPSJNNjQuMDQ4IDIzLjQzNXYxMy44MzFIMzAuNjRsLS4yNzctMy4xMDhsLS42My03LjAxMmwtLjMzMS0zLjcxMXptLS4wNDcgMjcuOTk2djEzLjgzMUg0OC43OTJsLS4yNzctMy4xMDhsLS42MzEtNy4wMTJsLS4zMy0zLjcxMXoiLz48L3N2Zz4=" alt="CSS">
+            <p>CSS</p>
+        </div>
+        <div class="skill-item">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNTYiIGhlaWdodD0iMjU2IiB2aWV3Qm94PSIwIDAgMjU2IDI1NiI+PHBhdGggZmlsbD0iI2Y3ZGYxZSIgZD0iTTAgMGgyNTZ2MjU2SDB6Ii8+PHBhdGggZD0ibTY3LjMxMiAyMTMuOTMybDE5LjU5LTExLjg1NmMzLjc4IDYuNzAxIDcuMjE4IDEyLjM3MSAxNS40NjUgMTIuMzcxYzcuOTA1IDAgMTIuODktMy4wOTIgMTIuODktMTUuMTJ2LTgxLjc5OGgyNC4wNTd2ODIuMTM4YzAgMjQuOTE3LTE0LjYwNiAzNi4yNTktMzUuOTE2IDM2LjI1OWMtMTkuMjQ1IDAtMzAuNDE2LTkuOTY3LTM2LjA4Ny0yMS45OTZtODUuMDctMi41NzZsMTkuNTg4LTExLjM0MWM1LjE1NyA4LjQyMSAxMS44NTkgMTQuNjA3IDIzLjcxNSAxNC42MDdjOS45NjkgMCAxNi4zMjUtNC45ODQgMTYuMzI1LTExLjg1OGMwLTguMjQ4LTYuNTMtMTEuMTctMTcuNTI4LTE1Ljk4bC02LjAxMy0yLjU4Yy0xNy4zNTctNy4zODctMjguODctMTYuNjY3LTI4Ljg3LTM2LjI1N2MwLTE4LjA0NCAxMy43NDctMzEuNzkyIDM1LjIyOC0zMS43OTJjMTUuMjk0IDAgMjYuMjkyIDUuMzI4IDM0LjE5NiAxOS4yNDdsLTE4LjczMiAxMi4wM2MtNC4xMjUtNy4zODktOC41OTEtMTAuMzEtMTUuNDY1LTEwLjMxYy03LjA0NiAwLTExLjUxNCA0LjQ2OC0xMS41MTQgMTAuMzFjMCA3LjIxNyA0LjQ2OCAxMC4xNCAxNC43NzggMTQuNjA4bDYuMDE0IDIuNTc3YzIwLjQ1IDguNzY1IDMxLjk2MyAxNy43IDMxLjk2MyAzNy44MDRjMCAyMS42NTQtMTcuMDEyIDMzLjUxLTM5Ljg2NyAzMy41MWMtMjIuMzM5IDAtMzYuNzc0LTEwLjY1NC00My44MTktMjQuNTc0Ii8+PC9zdmc+" alt="JavaScript">
+            <p>JAVASCRIPT</p>
+        </div>
+        <div class="skill-item">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNTYiIGhlaWdodD0iMjI4IiB2aWV3Qm94PSIwIDAgMjU2IDIyOCI+PHBhdGggZmlsbD0iIzAwZDhmZiIgZD0iTTIxMC40ODMgNzMuODI0YTE3MiAxNzIgMCAwIDAtOC4yNC0yLjU5N2MuNDY1LTEuOS44OTMtMy43NzcgMS4yNzMtNS42MjFjNi4yMzgtMzAuMjgxIDIuMTYtNTQuNjc2LTExLjc2OS02Mi43MDhjLTEzLjM1NS03LjctMzUuMTk2LjMyOS01Ny4yNTQgMTkuNTI2YTE3MSAxNzEgMCAwIDAtNi4zNzUgNS44NDhhMTU2IDE1NiAwIDAgMC00LjI0MS0zLjkxN0MxMDAuNzU5IDMuODI5IDc3LjU4Ny00LjgyMiA2My42NzMgMy4yMzNDNTAuMzMgMTAuOTU3IDQ2LjM3OSAzMy44OSA1MS45OTUgNjIuNTg4YTE3MSAxNzEgMCAwIDAgMS44OTIgOC40OGMtMy4yOC45MzItNi40NDUgMS45MjQtOS40NzQgMi45OEMxNy4zMDkgODMuNDk4IDAgOTguMzA3IDAgMTEzLjY2OGMwIDE1Ljg2NSAxOC41ODIgMzEuNzc4IDQ2LjgxMiA0MS40MjdhMTQ2IDE0NiAwIDAgMCA2LjkyMSAyLjE2NWExNjggMTY4IDAgMCAwLTIuMDEgOS4xMzhjLTUuMzU0IDI4LjItMS4xNzMgNTAuNTkxIDEyLjEzNCA1OC4yNjZjMTMuNzQ0IDcuOTI2IDM2LjgxMi0uMjIgNTkuMjczLTE5Ljg1NWExNDYgMTQ2IDAgMCAwIDUuMzQyLTQuOTIzYTE2OCAxNjggMCAwIDAgNi45MiA2LjMxNGMyMS43NTggMTguNzIyIDQzLjI0NiAyNi4yODIgNTYuNTQgMTguNTg2YzEzLjczMS03Ljk0OSAxOC4xOTQtMzIuMDAzIDEyLjQtNjEuMjY4YTE0NSAxNDUgMCAwIDAtMS41MzUtNi44NDJjMS42Mi0uNDggMy4yMS0uOTc0IDQuNzYtMS40ODhjMjkuMzQ4LTkuNzIzIDQ4LjQ0My0yNS40NDMgNDguNDQzLTQxLjUyYzAtMTUuNDE3LTE3Ljg2OC0zMC4zMjYtNDUuNTE3LTM5Ljg0NG0tNi4zNjUgNzAuOTg0cS0yLjEwMi42OTQtNC4zIDEuMzQ1Yy0zLjI0LTEwLjI1Ny03LjYxMi0yMS4xNjMtMTIuOTYzLTMyLjQzMmM1LjEwNi0xMSA5LjMxLTIxLjc2NyAxMi40NTktMzEuOTU3YzIuNjE5Ljc1OCA1LjE2IDEuNTU3IDcuNjEgMi40YzIzLjY5IDguMTU2IDM4LjE0IDIwLjIxMyAzOC4xNCAyOS41MDRjMCA5Ljg5Ni0xNS42MDYgMjIuNzQzLTQwLjk0NiAzMS4xNG0tMTAuNTE0IDIwLjgzNGMyLjU2MiAxMi45NCAyLjkyNyAyNC42NCAxLjIzIDMzLjc4N2MtMS41MjQgOC4yMTktNC41OSAxMy42OTgtOC4zODIgMTUuODkzYy04LjA2NyA0LjY3LTI1LjMyLTEuNC00My45MjctMTcuNDEyYTE1NyAxNTcgMCAwIDEtNi40MzctNS44N2M3LjIxNC03Ljg4OSAxNC40MjMtMTcuMDYgMjEuNDU5LTI3LjI0NmMxMi4zNzYtMS4wOTggMjQuMDY4LTIuODk0IDM0LjY3MS01LjM0NXEuNzg1IDMuMTYyIDEuMzg2IDYuMTkzTTg3LjI3NiAyMTQuNTE1Yy03Ljg4MiAyLjc4My0xNC4xNiAyLjg2My0xNy45NTUuNjc1Yy04LjA3NS00LjY1Ny0xMS40MzItMjIuNjM2LTYuODUzLTQ2Ljc1MmExNTcgMTU3IDAgMCAxIDEuODY5LTguNDk5YzEwLjQ4NiAyLjMyIDIyLjA5MyAzLjk4OCAzNC40OTggNC45OTRjNy4wODQgOS45NjcgMTQuNTAxIDE5LjEyOCAyMS45NzYgMjcuMTVhMTM1IDEzNSAwIDAgMS00Ljg3NyA0LjQ5MmMtOS45MzMgOC42ODItMTkuODg2IDE0Ljg0Mi0yOC42NTggMTcuOTRNNTAuMzUgMTQ0Ljc0N2MtMTIuNDgzLTQuMjY3LTIyLjc5Mi05LjgxMi0yOS44NTgtMTUuODYzYy02LjM1LTUuNDM3LTkuNTU1LTEwLjgzNi05LjU1NS0xNS4yMTZjMC05LjMyMiAxMy44OTctMjEuMjEyIDM3LjA3Ni0yOS4yOTNjMi44MTMtLjk4IDUuNzU3LTEuOTA1IDguODEyLTIuNzczYzMuMjA0IDEwLjQyIDcuNDA2IDIxLjMxNSAxMi40NzcgMzIuMzMyYy01LjEzNyAxMS4xOC05LjM5OSAyMi4yNDktMTIuNjM0IDMyLjc5MmExMzUgMTM1IDAgMCAxLTYuMzE4LTEuOTc5bTEyLjM3OC04NC4yNmMtNC44MTEtMjQuNTg3LTEuNjE2LTQzLjEzNCA2LjQyNS00Ny43ODljOC41NjQtNC45NTggMjcuNTAyIDIuMTExIDQ3LjQ2MyAxOS44MzVhMTQ0IDE0NCAwIDAgMSAzLjg0MSAzLjU0NWMtNy40MzggNy45ODctMTQuNzg3IDE3LjA4LTIxLjgwOCAyNi45ODhjLTEyLjA0IDEuMTE2LTIzLjU2NSAyLjkwOC0zNC4xNjEgNS4zMDlhMTYwIDE2MCAwIDAgMS0xLjc2LTcuODg3bTExMC40MjcgMjcuMjY4YTM0OCAzNDggMCAwIDAtNy43ODUtMTIuODAzYzguMTY4IDEuMDMzIDE1Ljk5NCAyLjQwNCAyMy4zNDMgNC4wOGMtMi4yMDYgNy4wNzItNC45NTYgMTQuNDY1LTguMTkzIDIyLjA0NWEzODEgMzgxIDAgMCAwLTcuMzY1LTEzLjMyMm0tNDUuMDMyLTQzLjg2MWM1LjA0NCA1LjQ2NSAxMC4wOTYgMTEuNTY2IDE1LjA2NSAxOC4xODZhMzIyIDMyMiAwIDAgMC0zMC4yNTctLjAwNmM0Ljk3NC02LjU1OSAxMC4wNjktMTIuNjUyIDE1LjE5Mi0xOC4xOE04Mi44MDIgODcuODNhMzIzIDMyMyAwIDAgMC03LjIyNyAxMy4yMzhjLTMuMTg0LTcuNTUzLTUuOTA5LTE0Ljk4LTguMTM0LTIyLjE1MmM3LjMwNC0xLjYzNCAxNS4wOTMtMi45NyAyMy4yMDktMy45ODRhMzIyIDMyMiAwIDAgMC03Ljg0OCAxMi44OTdtOC4wODEgNjUuMzUyYy04LjM4NS0uOTM2LTE2LjI5MS0yLjIwMy0yMy41OTMtMy43OTNjMi4yNi03LjMgNS4wNDUtMTQuODg1IDguMjk4LTIyLjZhMzIxIDMyMSAwIDAgMCA3LjI1NyAxMy4yNDZjMi41OTQgNC40OCA1LjI4IDguODY4IDguMDM4IDEzLjE0N20zNy41NDIgMzEuMDNjLTUuMTg0LTUuNTkyLTEwLjM1NC0xMS43NzktMTUuNDAzLTE4LjQzM2M0LjkwMi4xOTIgOS44OTkuMjkgMTQuOTc4LjI5YzUuMjE4IDAgMTAuMzc2LS4xMTcgMTUuNDUzLS4zNDNjLTQuOTg1IDYuNzc0LTEwLjAxOCAxMi45Ny0xNS4wMjggMTguNDg2bTUyLjE5OC01Ny44MTdjMy40MjIgNy44IDYuMzA2IDE1LjM0NSA4LjU5NiAyMi41MmMtNy40MjIgMS42OTQtMTUuNDM2IDMuMDU4LTIzLjg4IDQuMDcxYTM4MiAzODIgMCAwIDAgNy44NTktMTMuMDI2YTM0NyAzNDcgMCAwIDAgNy40MjUtMTMuNTY1bS0xNi44OTggOC4xMDFhMzU5IDM1OSAwIDAgMS0xMi4yODEgMTkuODE1YTMyOSAzMjkgMCAwIDEtMjMuNDQ0LjgyM2MtNy45NjcgMC0xNS43MTYtLjI0OC0yMy4xNzgtLjczMmEzMTAgMzEwIDAgMCAxLTEyLjUxMy0xOS44NDZoLjAwMWEzMDcgMzA3IDAgMCAxLTEwLjkyMy0yMC42MjdhMzEwIDMxMCAwIDAgMSAxMC44OS0yMC42MzdsLS4wMDEuMDAxYTMwNyAzMDcgMCAwIDEgMTIuNDEzLTE5Ljc2MWM3LjYxMy0uNTc2IDE1LjQyLS44NzYgMjMuMzEtLjg3NkgxMjhjNy45MjYgMCAxNS43NDMuMzAzIDIzLjM1NC44ODNhMzI5IDMyOSAwIDAgMSAxMi4zMzUgMTkuNjk1YTM1OSAzNTkgMCAwIDEgMTEuMDM2IDIwLjU0YTMzMCAzMzAgMCAwIDEtMTEgMjAuNzIybTIyLjU2LTEyMi4xMjRjOC41NzIgNC45NDQgMTEuOTA2IDI0Ljg4MSA2LjUyIDUxLjAyNnEtLjUxOCAyLjUwNC0xLjE1IDUuMDljLTEwLjYyMi0yLjQ1Mi0yMi4xNTUtNC4yNzUtMzQuMjMtNS40MDhjLTcuMDM0LTEwLjAxNy0xNC4zMjMtMTkuMTI0LTIxLjY0LTI3LjAwOGExNjEgMTYxIDAgMCAxIDUuODg4LTUuNGMxOC45LTE2LjQ0NyAzNi41NjQtMjIuOTQxIDQ0LjYxMi0xOC4zTTEyOCA5MC44MDhjMTIuNjI1IDAgMjIuODYgMTAuMjM1IDIyLjg2IDIyLjg2cy0xMC4yMzUgMjIuODYtMjIuODYgMjIuODZzLTIyLjg2LTEwLjIzNS0yMi44Ni0yMi44NnMxMC4yMzUtMjIuODYgMjIuODYtMjIuODYiLz48L3N2Zz4=" alt="React JS">
+            <p>REACT JS</p>
+        </div>
+        <div class="skill-item">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+PGcgZmlsbD0iI2ZmZiI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNNjQgNS4xMDNjLTMzLjM0NyAwLTYwLjM4OCAyNy4wMzUtNjAuMzg4IDYwLjM4OGMwIDI2LjY4MiAxNy4zMDMgNDkuMzE3IDQxLjI5NyA1Ny4zMDNjMy4wMTcuNTYgNC4xMjUtMS4zMSA0LjEyNS0yLjkwNWMwLTEuNDQtLjA1Ni02LjE5Ny0uMDgyLTExLjI0M2MtMTYuOCAzLjY1My0yMC4zNDUtNy4xMjUtMjAuMzQ1LTcuMTI1Yy0yLjc0Ny02Ljk4LTYuNzA1LTguODM2LTYuNzA1LTguODM2Yy01LjQ4LTMuNzQ4LjQxMy0zLjY3LjQxMy0zLjY3YzYuMDYzLjQyNSA5LjI1NyA2LjIyMyA5LjI1NyA2LjIyM2M1LjM4NiA5LjIzIDE0LjEyNyA2LjU2MiAxNy41NzMgNS4wMmMuNTQyLTMuOTAzIDIuMTA3LTYuNTY4IDMuODM0LTguMDc2Yy0xMy40MTMtMS41MjUtMjcuNTE0LTYuNzA0LTI3LjUxNC0yOS44NDNjMC02LjU5MyAyLjM2LTExLjk4IDYuMjIzLTE2LjIxYy0uNjI4LTEuNTItMi42OTUtNy42NjIuNTg0LTE1Ljk4YzAgMCA1LjA3LTEuNjIzIDE2LjYxIDYuMTlDNTMuNyAzNSA1OC44NjcgMzQuMzI3IDY0IDM0LjMwNGM1LjEzLjAyMyAxMC4zLjY5NCAxNS4xMjcgMi4wMzNjMTEuNTI2LTcuODEzIDE2LjU5LTYuMTkgMTYuNTktNi4xOWMzLjI4NyA4LjMxNyAxLjIyIDE0LjQ2LjU5MyAxNS45OGMzLjg3MiA0LjIzIDYuMjE1IDkuNjE3IDYuMjE1IDE2LjIxYzAgMjMuMTk0LTE0LjEyNyAyOC4zLTI3LjU3NCAyOS43OTZjMi4xNjcgMS44NzQgNC4wOTcgNS41NSA0LjA5NyAxMS4xODNjMCA4LjA4LS4wNyAxNC41ODMtLjA3IDE2LjU3MmMwIDEuNjA3IDEuMDg4IDMuNDkgNC4xNDggMi44OTdjMjMuOTgtNy45OTQgNDEuMjYzLTMwLjYyMiA0MS4yNjMtNTcuMjk0QzEyNC4zODggMzIuMTQgOTcuMzUgNS4xMDQgNjQgNS4xMDR6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBkPSJNMjYuNDg0IDkxLjgwNmMtLjEzMy4zLS42MDUuMzktMS4wMzUuMTg1Yy0uNDQtLjE5Ni0uNjg1LS42MDUtLjU0My0uOTA2Yy4xMy0uMzEuNjAzLS4zOTUgMS4wNC0uMTg4Yy40NC4xOTcuNjkuNjEuNTM3Ljkxem0yLjQ0NiAyLjcyOWMtLjI4Ny4yNjctLjg1LjE0My0xLjIzMi0uMjhjLS4zOTYtLjQyLS40Ny0uOTgzLS4xNzctMS4yNTRjLjI5OC0uMjY2Ljg0NC0uMTQgMS4yNC4yOGMuMzk0LjQyNi40NzIuOTg0LjE3IDEuMjU1em0yLjM4MiAzLjQ3N2MtLjM3LjI1OC0uOTc2LjAxNy0xLjM1LS41MmMtLjM3LS41MzgtLjM3LTEuMTgzLjAxLTEuNDRjLjM3My0uMjU4Ljk3LS4wMjUgMS4zNS41MDdjLjM2OC41NDUuMzY4IDEuMTktLjAxIDEuNDUyem0zLjI2MSAzLjM2MWMtLjMzLjM2NS0xLjAzNi4yNjctMS41NTItLjIzYy0uNTI3LS40ODctLjY3NC0xLjE4LS4zNDMtMS41NDRjLjMzNi0uMzY2IDEuMDQ1LS4yNjQgMS41NjQuMjNjLjUyNy40ODYuNjg2IDEuMTguMzMzIDEuNTQzem00LjUgMS45NTFjLS4xNDcuNDczLS44MjUuNjg4LTEuNTEuNDg2Yy0uNjgzLS4yMDctMS4xMy0uNzYtLjk5LTEuMjM4Yy4xNC0uNDc3LjgyMy0uNyAxLjUxMi0uNDg1Yy42ODMuMjA2IDEuMTMuNzU2Ljk4OCAxLjIzN200Ljk0My4zNjFjLjAxNy40OTgtLjU2My45MS0xLjI4LjkyYy0uNzIzLjAxNy0xLjMwOC0uMzg3LTEuMzE1LS44NzdjMC0uNTAzLjU2OC0uOTEgMS4yOS0uOTI0Yy43MTctLjAxMyAxLjMwNi4zODcgMS4zMDYuODh6bTQuNTk4LS43ODJjLjA4Ni40ODUtLjQxMy45ODQtMS4xMjYgMS4xMTdjLS43LjEzLTEuMzUtLjE3Mi0xLjQ0LS42NTNjLS4wODYtLjQ5OC40MjItLjk5NyAxLjEyMi0xLjEyNmMuNzE0LS4xMjMgMS4zNTQuMTcgMS40NDQuNjYzem0wIDAiLz48L2c+PC9zdmc+" alt="GitHub">
+            <p>GITHUB</p>
+        </div>
+        <div class="skill-item">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+PHBhdGggZmlsbD0iI2YzNGYyOSIgZD0iTTEyNC43MzcgNTguMzc4TDY5LjYyMSAzLjI2NGMtMy4xNzItMy4xNzQtOC4zMi0zLjE3NC0xMS40OTcgMEw0Ni42OCAxNC43MWwxNC41MTggMTQuNTE4YzMuMzc1LTEuMTM5IDcuMjQzLS4zNzUgOS45MzIgMi4zMTRjMi43MDMgMi43MDYgMy40NjEgNi42MDcgMi4yOTQgOS45OTNsMTMuOTkyIDEzLjk5M2MzLjM4NS0xLjE2NyA3LjI5Mi0uNDEzIDkuOTk0IDIuMjk1YzMuNzggMy43NzcgMy43OCA5LjkgMCAxMy42NzlhOS42NzMgOS42NzMgMCAwIDEtMTMuNjgzIDBhOS42OCA5LjY4IDAgMCAxLTIuMTA1LTEwLjUyMUw2OC41NzQgNDcuOTMzbC0uMDAyIDM0LjM0MWE5LjcgOS43IDAgMCAxIDIuNTU5IDEuODI4YzMuNzc4IDMuNzc3IDMuNzc4IDkuODk4IDAgMTMuNjgzYy0zLjc3OSAzLjc3Ny05LjkwNCAzLjc3Ny0xMy42NzkgMGMtMy43NzgtMy43ODQtMy43NzgtOS45MDUgMC0xMy42ODNhOS43IDkuNyAwIDAgMSAzLjE2Ny0yLjExVjQ3LjMzM2E5LjYgOS42IDAgMCAxLTMuMTY3LTIuMTExYy0yLjg2Mi0yLjg2LTMuNTUxLTcuMDYtMi4wODMtMTAuNTc2TDQxLjA1NiAyMC4zMzNMMy4yNjQgNTguMTIzYTguMTMzIDguMTMzIDAgMCAwIDAgMTEuNWw1NS4xMTcgNTUuMTE0YzMuMTc0IDMuMTc0IDguMzIgMy4xNzQgMTEuNDk5IDBsNTQuODU4LTU0Ljg1OGE4LjEzNSA4LjEzNSAwIDAgMC0uMDAxLTExLjUwMSIvPjwvc3ZnPg==" alt="Git">
+            <p>GIT</p>
+        </div>
+        <div class="skill-item">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+PHBhdGggZmlsbD0iIzBhY2Y4MyIgZD0iTTQ1LjUgMTI5YzExLjkgMCAyMS41LTkuNiAyMS41LTIxLjVWODZINDUuNUMzMy42IDg2IDI0IDk1LjYgMjQgMTA3LjVTMzMuNiAxMjkgNDUuNSAxMjltMCAwIi8+PHBhdGggZmlsbD0iI2EyNTlmZiIgZD0iTTI0IDY0LjVDMjQgNTIuNiAzMy42IDQzIDQ1LjUgNDNINjd2NDNINDUuNUMzMy42IDg2IDI0IDc2LjQgMjQgNjQuNW0wIDAiLz48cGF0aCBmaWxsPSIjZjI0ZTFlIiBkPSJNMjQgMjEuNUMyNCA5LjYgMzMuNiAwIDQ1LjUgMEg2N3Y0M0g0NS41QzMzLjYgNDMgMjQgMzMuNCAyNCAyMS41bTAgMCIvPjxwYXRoIGZpbGw9IiNmZjcyNjIiIGQ9Ik02NyAwaDIxLjVDMTAwLjQgMCAxMTAgOS42IDExMCAyMS41UzEwMC40IDQzIDg4LjUgNDNINjd6bTAgMCIvPjxwYXRoIGZpbGw9IiMxYWJjZmUiIGQ9Ik0xMTAgNjQuNWMwIDExLjktOS42IDIxLjUtMjEuNSAyMS41UzY3IDc2LjQgNjcgNjQuNVM3Ni42IDQzIDg4LjUgNDNTMTEwIDUyLjYgMTEwIDY0LjVtMCAwIi8+PC9zdmc+" alt="Figma">
+            <p>FIGMA</p>
+        </div>
+        <div class="skill-item">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+PHBhdGggZmlsbD0iIzAwMWUzNiIgZD0iTTIyLjY2NyAxLjZoODIuNjY2QzExNy44NjcgMS42IDEyOCAxMS43MzMgMTI4IDI0LjI2N3Y3OS40NjZjMCAxMi41MzQtMTAuMTMzIDIyLjY2Ny0yMi42NjcgMjIuNjY3SDIyLjY2N0MxMC4xMzMgMTI2LjQgMCAxMTYuMjY3IDAgMTAzLjczM1YyNC4yNjdDMCAxMS43MzMgMTAuMTMzIDEuNiAyMi42NjcgMS42Ii8+PHBhdGggZmlsbD0iIzMxYThmZiIgZD0iTTQ1Ljg2NyAzMy4zMzNjLTEuNiAwLTMuMiAwLTQuODUzLjA1NGMtMS42NTQuMDUzLTMuMjAxLjA1My00LjY0MS4xMDdjLTEuNDQuMDUzLTIuNzczLjA1My00LjA1My4xMDZjLTEuMjI3LjA1My0yLjA4LjA1My0yLjk4Ny4wNTNjLS4zNzMgMC0uNTMzLjIxMy0uNTMzLjU4N3Y1NC44OGMwIC40OC4yMTMuNjk0LjY0LjY5NGgxMC4zNDdjLjM3My0uMDU0LjY0LS4zNzQuNTg2LS43NDd2LTE3LjEyYzEuMDEzIDAgMS43NiAwIDIuMjk0LjA1M2MuNTMzLjA1MyAxLjM4Ni4wNTMgMi42NjYuMDUzYzQuMzc0IDAgOC4zNzQtLjQ4IDEyLTEuODEzYzMuNDY3LTEuMjggNi40NTQtMy41MiA4LjU4Ny02LjUwN3EzLjItNC40OCAzLjItMTEuMzZjMC0yLjQtLjQyNi00LjY5My0xLjIyNi02LjkzM0ExNyAxNyAwIDAgMCA2NCAzOS4zNmExOS4wNSAxOS4wNSAwIDAgMC03LjE0Ny00LjM3NGMtMi45ODctMS4xMi02LjYxMy0xLjY1My0xMC45ODYtMS42NTNtMS4xOSAxMC41MDVjMS45LjAzNiAzLjc1LjM2OCA1LjQ3NiAxLjA2OGMxLjU0Ny41ODcgMi44MjcgMS42NTQgMy43MzQgMy4wNGE4LjggOC44IDAgMCAxIDEuMjI3IDQuNzQ4YzAgMi4zNDYtLjUzNCA0LjE2LTEuNjU0IDUuNDkzYy0xLjE3NCAxLjMzMy0yLjY2NyAyLjM0Ny00LjM3MyAyLjgyN2MtMS45NzQuNjQtNC4wNTQuOTU5LTYuMTM0Ljk1OWgtMi44MjdjLS42NCAwLTEuMzMyLS4wNTMtMi4wNzktLjEwNnYtMTcuOTJjLjM3My0uMDU0IDEuMTItLjEwNyAyLjE4Ny0uMDUzYzEuMDEzLS4wNTQgMi4yMzktLjA1NCAzLjYyNi0uMDU0cS40MS0uMDEuODE3LS4wMDJtNDQuNzMgMi43MjNjLTMuNzg3IDAtNi45MzQuNTg2LTkuNDQgMS44NjZjLTIuMjkzIDEuMDY3LTQuMjY3IDIuNzczLTUuNiA0LjkwNmMtMS4xNzMgMS45NzQtMS44MTQgNC4xNi0xLjgxNCA2LjQ1NGExMS40NSAxMS40NSAwIDAgMCAxLjIyNyA1LjQ0YTEzLjggMTMuOCAwIDAgMCA0LjA1NCA0LjUzM2EzMi42IDMyLjYgMCAwIDAgNy41NzMgMy44NGMyLjYxMyAxLjAxMyA0LjM3MyAxLjgxMyA1LjIyNyAyLjUwNmMuODUzLjY5NCAxLjI4IDEuMzg3IDEuMjggMi4xMzRjMCAuOTYtLjU4NyAxLjg2Ny0xLjQ0IDIuMjRjLS45Ni40OC0yLjQuNzQ3LTQuNDI3Ljc0N2MtMi4xMzMgMC00LjI2Ny0uMjY3LTYuMjk0LS44YTIyLjggMjIuOCAwIDAgMS02LjYxMy0yLjYxM2MtLjE2LS4xMDctLjMyLS4xNi0uNDgtLjA1M2MtLjE2LjEwNi0uMjEzLjMxOS0uMjEzLjQ3OXY5LjI4Yy0uMDUzLjQyNy4yMTMuOC41ODcgMS4wMTNhMjEuNSAyMS41IDAgMCAwIDUuNDQgMS43MDdjMi40LjQ4IDQuNzk5LjY5MyA3LjI1Mi42OTNjMy44NCAwIDcuMDQxLS41ODYgOS42NTQtMS43MDZjMi40LS45NiA0LjQ4LTIuNjEzIDUuOTczLTQuNzQ3YTEyLjQgMTIuNCAwIDAgMCAyLjA4LTcuMDkzYTExLjUgMTEuNSAwIDAgMC0xLjIyNi01LjQ5M2MtMS4wMTQtMS44MTQtMi40NTQtMy4zMDctNC4yMTQtNC40MjdhMzguNiAzOC42IDAgMCAwLTguMjEzLTMuODk0YTQ5IDQ5IDAgMCAxLTMuNzg3LTEuNzZjLS42OTMtLjM3My0xLjMzMy0uODUzLTEuODEzLTEuNDRjLS4zMi0uNDI3LS41MzMtLjkwNi0uNTMzLTEuMzg2cy4xNi0xLjAxMy40MjYtMS40NGMuMzc0LS41MzMuOTYtLjkwNyAxLjY1My0xLjA2N2MxLjAxNC0uMjY2IDIuMTM0LS40MjcgMy4yLS4zNzRjMi4wMjcgMCA0IC4yNjcgNS45NzQuNjk0YzEuODE0LjM3MyAzLjUyLjk2IDUuMTIgMS44MTRjLjIxMy4xMDYuNDguMTA2Ljk2IDBhLjY2LjY2IDAgMCAwIC4yNjctLjUzNHYtOC42OTNjMC0uMjE0LS4wNTQtLjQyNy0uMTA3LS42NGMtLjEwNy0uMjEzLS4zMi0uNDI3LS41MzMtLjQ4QTE4LjggMTguOCAwIDAgMCA5OC40IDQ3LjA0YTQ2IDQ2IDAgMCAwLTYuNjEzLS40OHoiLz48L3N2Zz4=" alt="Photoshop">
+            <p>PHOTOSHOP</p>
+        </div>
+        <div class="skill-item">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTI4IDEyOCI+PHBhdGggZmlsbD0iIzMwMCIgZD0iTTIyLjcgMS42aDgyLjdjMTIuNSAwIDIyLjcgMTAuMSAyMi43IDIyLjd2NzkuNWMwIDEyLjUtMTAuMSAyMi43LTIyLjcgMjIuN0gyMi43QzEwLjEgMTI2LjQgMCAxMTYuMyAwIDEwMy43VjI0LjNDMCAxMS43IDEwLjEgMS42IDIyLjcgMS42Ii8+PHBhdGggZmlsbD0iI2ZmOWEwMCIgZD0iTTYxLjkgNzYuM0g0MmwtNCAxMi41Yy0uMS41LS41LjgtMSAuN0gyN2MtLjYgMC0uNy0uMy0uNi0xbDE3LjItNDkuNGMuMi0uNS4zLTEuMS41LTEuOGMuMi0xLjEuMy0yLjMuMy0zLjVjLS4xLS4zLjItLjUuNC0uNmgxMy44Yy40IDAgLjYuMi43LjRsMTkuNSA1NC45Yy4yLjYgMCAuOS0uNS45SDY3LjFjLS40LjEtLjctLjItLjktLjZ6TTQ1LjEgNjUuNGgxMy41Yy0uMy0xLjEtLjctMi41LTEuMi0zLjhjLS41LTEuNC0xLTMtMS40LTQuNmMtLjUtMS43LTEtMy4zLTEuNS00LjljLS41LTEuNy0xLTMuMi0xLjQtNC43cS0uNi0yLjI1LTEuMi00LjJoLS4xcS0uNzUgMy40NS0xLjggNi45Yy0uOCAyLjYtMS42IDUuMi0yLjUgNy45Yy0uOCAyLjctMS42IDUuMi0yLjQgNy40bTQ1LjYtMjIuN2MtMS44LjEtMy41LS42LTQuNy0xLjlzLTEuOS0zLjEtMS44LTQuOWMtLjEtMS44LjYtMy41IDEuOS00LjdzMy0xLjkgNC43LTEuOWMyLjEgMCAzLjcuNiA0LjkgMS45czEuOCAzIDEuOCA0LjdjLjEgMS44LS42IDMuNi0xLjkgNC45cy0zLjEgMi00LjkgMS45bS02IDQ2LjNWNDcuOWMwLS41LjItLjcuNy0uN0g5NmMuNSAwIC43LjMuNy43Vjg5YzAgLjYtLjIuOS0uNy45SDg1LjVjLS41LS4xLS44LS40LS44LS45Ii8+PC9zdmc+" alt="Illustrator">
+            <p>ILLUSTRATOR</p>
+        </div>
+    </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="content">
+            <h1>Contact Me</h1>
+            <p>If you have any questions or would like to get in touch, feel free to reach out to me via email or connect with me on social media.</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><b></b><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>KG 316 St, <br>Kigali, Rwanda</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><b></b><i class="fa-solid fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+250 784 566 102</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><b></b><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>ndagedeo061@gmail.com</p>
+                    </div>
+                </div>
+                <h2 class="txt">Get in Touch</h2>
+                <ul class="sci">
+                    <li><a href="https://www.instagram.com/gedeon_gills/"><i class='bx bxl-instagram-alt'></i></a></li>
+                    <li><a href="https://x.com/NdayambajeGede6"><i class='bx bxl-twitter' ></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/ineza-ndayambaje-gedeon-0897a732b/"><i class='bx bxl-linkedin' ></i></a></li>
+                    <li><a href="#"><i class='bx bxl-github' ></i></a></li>
+                </ul>
+            </div> 
+            <div class="contactForm">
+                <form>
+                    <h2>Send a Message</h2>
+                    <div class="inputBox">
+                        <input type="text" placeholder="" required>
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" placeholder="" required>
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type Your Message</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Gedeon Gills. All rights reserved.</p>
+        <p>Designed by Gedeon Gills</p>
+        <p>Contact: <a href="mailto:ndagedeo061@gmail.com">ndagedeo061@gmail.com</a></p>
+    </footer>
+    </body>
+    </html>
