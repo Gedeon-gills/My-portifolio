@@ -415,23 +415,6 @@ body {
   .menu {
     display: block;
   }
-
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .hero-content h3 {
-    font-size: 1.5rem;
-  }
-
-  .hero-content p {
-    font-size: 0.9rem;
-  }
-
-  .buttons a {
-    width: 100%;
-    font-size: 0.9rem;
-  }
 }
 
 
