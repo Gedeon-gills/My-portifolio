@@ -372,6 +372,16 @@ body {
   }
 }
 
+@media (max-width: 991px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    padding: 0;
+  }
+}
 
 .menu {
   display: none;
@@ -390,8 +400,7 @@ body {
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: #011627;
-    margin-top: 10px;
+    margin-top: 1rem;
   }
 
   .nav-links.show {
@@ -400,14 +409,33 @@ body {
 
   .nav-links li {
     text-align: center;
-    padding: 10px 0;
+    padding: 0.5rem 0;
   }
 
   .menu {
     display: block;
   }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .buttons a {
+    width: 100%;
+    font-size: 0.9rem;
+  }
 }
 
+
+/*about*/
 .about {
   padding: 7rem 10%;
   color: #fff;
