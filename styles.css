@@ -29,6 +29,7 @@ body {
 .brand {
   position: relative;
   font-size: 25px;
+  display: block;
   color: #cbd5e1;
   text-decoration:none;
   font-weight: 600;
@@ -44,6 +45,17 @@ body {
   background: #011627;
   animation: showRight 1s ease forwards;
   animation-delay: .4s;
+}
+
+.menu {
+  display: none; /* hide menu on desktop */
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
 }
 
 .navbar a {
@@ -69,7 +81,7 @@ body {
   min-height: 100vh;       
   display: flex;
   align-items: center;
-  padding: 6rem 10% 2rem;   
+  padding: 8rem 10% 2rem;   /* more top padding for desktop */
   flex-wrap: wrap;
   gap: 2rem;
   box-sizing: border-box;
@@ -375,53 +387,14 @@ body {
   }
 }
 
-@media (max-width: 991px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    padding-top: 20px;
-  }
-
-  .hero-image {
-    padding: 0;
-  }
-}
-
-.menu {
-  display: none;
-  font-size: 26px;
-  color: #fff;
-  cursor: pointer;
-}
-
-
 @media (max-width: 768px) {
-  .navbar {
-    flex-wrap: wrap;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  .nav-links.show {
-    display: flex;
-  }
-
-  .nav-links li {
-    text-align: center;
-    padding: 0.5rem 0;
-  }
-
-  .menu {
-    display: block;
-  }
   .hero {
-    top: 20px;
+    flex-direction: column;
+    text-align: center;
+    padding: 6rem 5% 2rem;  /* smaller padding on mobile */
+    margin-top: 60px;       /* space below fixed navbar */
   }
+
   .hero-content h1 {
     font-size: 2rem;
   }
@@ -437,6 +410,18 @@ body {
   .buttons a {
     width: 100%;
     font-size: 0.9rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .navbar,
+  .brand {
+    display: none; /* hide navbar and brand */
+  }
+
+  .menu {
+    display: block; /* show only menu */
   }
 }
 
