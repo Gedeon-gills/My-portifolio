@@ -1,11 +1,15 @@
 const menu = document.getElementById('menu');
-const navbar = document.querySelector('.navbar');
+const navbar = document.getElementById('navbar');
+const close = document.getElementById('close');
 
 menu.addEventListener('click', () => {
-  if (navbar.style.display === 'flex' || navbar.style.display === '') {
-    navbar.style.display = 'flex';
-    navbar.style.flexDirection = 'column'; // stack links
-  } else {
-    navbar.style.display = 'none';
-  }
-});
+    menu.style.display = 'none';
+    close.style.display = 'block';
+    navbar.classList.add('open');
+})
+
+close.addEventListener('click', () => {
+    menu.style.display = 'block';
+    close.style.display = 'none';
+    navbar.classList.remove('open'); 
+})
