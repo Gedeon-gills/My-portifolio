@@ -1,16 +1,6 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "*.html", "use": "@vercel/static" },
-    { "src": "*.css", "use": "@vercel/static" },
-    { "src": "*.js", "use": "@vercel/static" }
-  ],
-  "routes": [
-    { "src": "/", "dest": "/homepage.html" },
-    { "src": "/(.*)", "dest": "/$1" }
-  ]
-<<<<<<< HEAD
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite"
 }
-=======
-}
->>>>>>> 5517a3d (updated html,css,js)
+
