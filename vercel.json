@@ -9,4 +9,8 @@
     { "src": "/", "dest": "/homepage.html" },
     { "src": "/(.*)", "dest": "/$1" }
   ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 5517a3d (updated html,css,js)

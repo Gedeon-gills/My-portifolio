@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family :   'Poppins',sans-serif;
+        }
+
+
+        body {
+            background-color: #011627; 
+            color: #cbd5e1;
+        }
+
+        .stroked-rectangle {
+            width: 1530px;
+            height: 850px; 
+            background-color: transparent; 
+            border: 3px solid #cbd5e1;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .branded {
+            position: absolute;
+            top: 37%;
+            left: 43%;
+        }
+
+        .myLogo {
+            position: relative;
+            font-size: 40px;
+            font-weight: 700;
+            display: flex;
+            color: #cbd5e1;
+            text-decoration:none;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            background-color: #cbd5e1;
+            color: #011627;
+            padding: 6px 20px;
+            font-size: 40px;
+            font-weight: 700;
+            border-radius: 50%;
+        }
+
+        .message {
+            position: absolute;
+            top: 53%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 72px;
+        }
+        @media (max-width: 900px) {
+            .stroked-rectangle {
+                width: 300px;
+                height: 660px; 
+            }
+            .message {
+                font-size: 32px;
+            }
+            .branded {
+                top: 30%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="stroked-rectangle"></div>
+    <div class="branded"><a class="myLogo"><span class="logo">G</span>Gedeon</a></div>
+    <h2 class="message">Welcome to My </h2>
+    <h2 class="message" style="top: 63%;">Portifolio</h2>
+    <script>
+        let countdown = 1;
+        const countdownElement = document.createElement('div');
+        countdownElement.style.position = 'absolute';
+        countdownElement.style.top = '75%';
+        countdownElement.style.left = '50%';
+        countdownElement.style.transform = 'translate(-50%, -50%)';
+        countdownElement.style.fontSize = '48px';
+        document.body.appendChild(countdownElement);
+        const interval = setInterval(() => {
+            countdownElement.textContent = `Redirecting in ${countdown}...`;
+            countdown--;
+            if (countdown < 0) {
+                clearInterval(interval);
+            }
+        }, 2000);
+
+        function redirectToPortfolio() {
+            setTimeout(function() {
+                window.location.href = "index.html";
+            }, 5000);
+        }
+        redirectToPortfolio();
+    </script>
+</body>
+</html>
