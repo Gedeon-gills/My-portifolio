@@ -26,6 +26,7 @@ themeToggler.addEventListener('click', () => {
 
 });
 
+
 const backToTop = document.getElementById("backToTop");
 
     window.addEventListener("scroll", () => {

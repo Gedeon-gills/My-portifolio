@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family :   'Poppins',sans-serif;
+        }
+
+
+        body {
+            background-color: #011627; 
+            color: #cbd5e1;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .blogsPage {
+            position: relative;
+            min-height: 100vh;
+            padding: 100px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #011627;
+        }
+
+        .blogsPage .content {
+            max-width: 800px;
+            text-align: center;
+        }
+
+
+        .blogsPage .content h1 {
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.2;
+            color: #cbd5e1;
+        }
+
+        .blogsPage .content p {
+            color:#00bcd4;
+            font-size: 1.1em;
+            font-weight: 300;
+            margin-top: 20px;
+        }
+
+        .blogPage-container {
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 320px);
+            gap: 60px;
+            width: 100%;
+            margin: 40px auto 0 auto;  
+            padding: 0 20px;           
+            justify-content: center; 
+        }
+
+        .blogPage-item {
+            background-color: #cbd5e1;
+            color: #011627;
+            width: 320px;
+            height: 370px;
+            border-radius: 35px;
+            padding: 20px;
+            margin-top: 80px;
+            box-shadow: 4px 4px 4px #39367D;
+        }
+
+        .blogPage-item:hover {
+            height: 420px;
+            box-shadow: 4px 4px 4px 2px #39367D;
+        }
+
+        .blogsPage img {
+            width: 300px;
+            height: 200px;
+            margin-top: -12px;
+            margin-bottom: -8px;
+            margin-left: -9px;
+            border-radius: 32px;
+        }
+
+        .blogsPage1Img {
+                height: 200px;   
+                object-fit: cover; 
+                width: 100%;       
+        }
+
+        .blogspage3Img {
+                height: 200px;   
+                object-fit: cover; 
+                width: 100%;       
+        }
+
+
+        .blogPage-item p {
+            margin-top: 15px;
+            font-size: 17px;
+            font-weight: 500;
+            color: #777777;
+        }
+
+
+        .blogPage-item h3 {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+
+
+        .blogPage-item .buttons a {
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            color: #00bcd4;
+            border: 2px solid #00bcd4;
+            border-radius: 8px;
+            width: 150px;
+            height: 30px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            letter-spacing: 1px;
+            margin-top: 12px;
+            margin-left: -2px;
+            z-index: 1;
+        }
+
+        .blogPage-item .buttons a:hover {
+            background-color: #00bcd4;
+            color: #011627;
+        }
+
+        .blogButtonsPage a {
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #00bcd4;
+            color: #011627;
+            border-radius: 8px;
+            width: 180px;
+            height: 60px;
+            font-size: 20px;
+            font-weight: 800;
+            text-decoration: none;
+            letter-spacing: 1px;
+            margin-top: 90px;
+            margin-left: auto;
+            z-index: 1;
+        }
+
+        .blogButtonsPage a:hover {
+            background-color: #cbd5e1;
+            color: #011627;
+            border: 2px solid #00bcd4;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="homepage"> 
+        <div class="branded"><a class="brand"><span class="logo">G</span>Gedeon</a></div>
+            <nav class="navbar" id="navbar">
+                <a href="homepage.html">Home</a>
+                <a href="homepage.html#about">About</a>
+                <a href="homepage.html#skills">Skills</a>
+                <a href="portifolio.html">Projects</a>
+                <a href="#blogs" class="active">Blogs</a>
+                <a href="homepage.html#contact">Contact</a>
+            </nav>
+            <div class="menu" id="menu">
+                ☰
+            </div>
+            <div class="close" id="close">
+                &times;
+            </div>
+            <div class="theme-toggler" id="theme-toggler">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" viewBox="0 -1 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 1 1 7.072 0l-.548.547A3.37 3.37 0 0 0 14 18.469V19a2 2 0 1 1-4 0v-.531c0-.895-.356-1.754-.988-2.386z"/></svg>
+            </div>
+    </header>
+
+    <section class="blogsPage" id="blogsPage">
+        <div class="content">
+            <h1>Blogs</h1>
+            <p class="title">Check out my recent blog posts where I share insights on<br>
+                design, development, and the latest industry trends.
+            </p>
+        </div>
+        
+        <div class="blogPage-container">
+            <div class="blogPage-item" id="blogItem1">
+                <img src="https://github.com/Gedeon-gills/My-portifolio/blob/main/assets/thomas-sullivan-las-vegas-nv-photos1.jpg?raw=true" alt="blog 1" class="blogsPage1Img" >
+                <div class="blogPage-info">
+                    <p>20 oct 2024 / 305 comments </p>
+                    <h3>
+                        Designing Engaging User Interfaces for M... </h3>
+                    <div class = "buttons">
+                        <a href='#modal1'>Case Study</a>    
+                    </div>
+                </div>
+
+            </div>
+            <div class="blogPage-item" id="blogItem2">
+                <img src="https://github.com/Gedeon-gills/My-portifolio/blob/main/assets/Untitled-design-2025-06-23T164606.210.jpg?raw=true" alt="blog 2" class="blogsPage2Img">
+                <div class="blogPage-info">
+                    <p>20 oct 2024 / 305 comments </p>
+                    <h3>Tips For Effective Dashboard Layouts and... </h3>
+                    <div class = "buttons">
+                        <a href='#modal2'>Case Study</a>    
+                    </div>
+                </div>
+            </div>
+            <div class="blogPage-item" id="blogItem3">
+                <img src="https://github.com/Gedeon-gills/My-portifolio/blob/main/assets/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg?raw=true" alt="blog 3" class="blogsPage3Img">
+                <div class="blogPage-info">
+                    <p>20 oct 2024 / 305 comments </p>
+                    <h3>How To Visualize Data for Better Product...</h3>
+                    <div class = "buttons">
+                        <a href='#modal3'>Case Study</a>    
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <a href="#blogItem1" class="closeBlo">×</a>
+                <h2>Designing Engaging User Interfaces</h2>
+                <p>Here is the full description about blog 1...</p>
+            </div>
+        </div>
+
+        
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <a href="#blogItem2" class="closeBlo">×</a>
+                <h2>Effective Dashboard Layouts</h2>
+                <p>Full details about blog 2...</p>
+            </div>
+        </div>
+
+        
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <a href="#blogItem3" class="closeBlo">×</a>
+                <h2>Visualization Techniques</h2>
+                <p>Full description for blog 3...</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Gedeon Gills. All rights reserved.</p>
+        <p>Designed by Gedeon Gills</p>
+        <p>Contact: <a href="mailto:ndagedeo061@gmail.com">ndagedeo061@gmail.com</a></p>
+    </footer>
+    <button id="backToTop"><i class='bx bx-up-arrow-alt'></i></button>
+    <script src="script.js"></script>
+    </body>
+    </html>
