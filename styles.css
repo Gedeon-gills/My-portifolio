@@ -1097,79 +1097,142 @@ body {
     }
 }
 
-
-.testimonials {
-  position: relative;
-  min-height: 100vh;
-  padding: 100px 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #011627;
-}
-
-.testimonials .content {
-  max-width: 800px;
-  text-align: center;
-}
-
-
-.testimonials .content h1 {
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 1.2;
-  color: #cbd5e1;
-}
-
-.testimonials .content p {
-  max-width: 478px;
-  color:#00bcd4;
-  font-size: 1.1em;
-  font-weight: 300;
-  margin-top: 50px;
-  margin-left: 10%;
-}
-
-.main-testimonial {
-  margin-top: 30px;
-  text-align: center;
-}
-.main-testimonial .client1Img {
-    width: 260px;
-    height: 260px;
-    border-radius: 50%;
-    object-fit: cover; 
-    margin-top: 30px;
-    margin-bottom: 20px;
-    box-shadow: -2px 2px 9px 12px rgba(148, 209, 217, 0.8);
-}
-
-.main-testimonial p {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #cbd5e1;
-  max-width: 600px;
-  margin: 30px auto;
-}
-
-.main-testimonial h3 {
-  margin-top: 80px;
-  font-size: 32px;
-  font-weight: 700;
-  color: #00bcd4;
-}
-
-.main-testimonial h3 span {
-  font-size: 32px;
-  font-weight: 500;
-  color: #cbd5e1;
-}
-
-
-
 /* End of blogs section styles */
+
+.section {
+        padding: 60px 20px;
+        text-align: center;
+        position: relative;
+    }
+
+    h1 {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .sub-text {
+        max-width: 500px;
+        margin: 0 auto;
+        color:#00bcd4;
+        font-size: 1.1em;
+        font-weight: 300;
+        margin-top: 20px;
+    }
+
+    .testimonial-wrapper {
+        max-width: 650px;
+        margin: 50px auto;
+        position: relative;
+        z-index: 3;
+    }
+
+    .center-img-wrapper {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        margin: 0 auto;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: -2px 1px 7.2px 18px #94b8cc88;
+    }
+
+    .center-img-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .review-text {
+        font-size: 18px;
+        margin: 40px auto;
+        line-height: 1.7;
+        max-width: 600px;
+        opacity: 0.9;
+    }
+
+    .review-author {
+        font-size: 32px;
+        margin-top: 10px;
+        font-weight: 700;
+        color: #1fafff;
+    }
+
+    .review-role {
+        font-size: 32px;
+        opacity: 0.8;
+    }
+
+    .avatar {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid #1fafff;
+        box-shadow: 0 0 15px #1fafff66;
+        animation: float 6s ease-in-out infinite;
+    }
+
+    .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .a1 { top: 25%; left: 10%; animation-delay: 0s; }
+    .a2 { top: 35%; left: 23%; animation-delay: 1s; }
+    .a3 { top: 50%; left: 30%; animation-delay: 2s; }
+    .a4 { top: 65%; left: 15%; animation-delay: 0.5s; }
+    .a5 { top: 20%; right: 15%; animation-delay: 1.5s; }
+    .a6 { top: 35%; right: 25%; animation-delay: 2.5s; }
+    .a7 { top: 50%; right: 10%; animation-delay: 1s; }
+    .a8 { top: 50%; right: 30%; animation-delay: 2s; }
+  
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+    }
+
+    @media screen  and (max-width: 768px) {
+
+        .center-img-wrapper {
+            width: 90px;
+            height: 90px;
+            box-shadow: -2px 1px 7.2px 8px #94b8cc88;
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+        }
+
+        .a1 { top: 35%; left: 10%; animation-delay: 0s; }
+        .a2 { top: 45%; left: 20%; animation-delay: 1s; }
+        .a5 { top: 35%; right: 10%; animation-delay: 1.5s; }
+        .a6 { top: 45%; right: 20%; animation-delay: 2.5s; }
+
+        .a3,
+        .a4,
+        .a7,
+        .a8 {
+            display: none;
+        }
+
+        .review-text {
+            font-size: 14px;
+            margin: 50px auto;
+            max-width: 300px;
+        }
+
+        .review-author {
+            font-size: 20px;
+        }
+      
+    }
+
+    /* End of testimonial section styles */
 
 .contact {
   position: relative;

@@ -6,7 +6,7 @@
     { "src": "*.js", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/", "dest": "/homepage.html" },
+    { "src": "/", "dest": "/redirectPage.html" },
     { "src": "/(.*)", "dest": "/$1" }
   ]
 }
