@@ -171,6 +171,51 @@
             border: 2px solid #00bcd4;
         }
 
+        /* light-theme */
+
+        body.light-theme {
+            background-color: #cbd5e1;
+            color: #011627;
+        }
+
+        body.light-theme .brand {
+            color: #011627;       
+        }
+
+        body.light-theme .logo {
+            background-color: #011627;
+            color: #cbd5e1;            
+        }
+
+        body.light-theme .navbar a {
+        color: #011627;
+        }
+
+        .body.light-theme .navbar a:hover,
+        .body.light-theme .navbar a.active{
+            color: #011627;
+        }
+
+        @media screen {
+        .body.light-theme .navbar a:hover,
+        .body.light-theme .navbar a.active{
+            color: #011627;
+        }
+        }
+
+        body.light-theme .menu,
+        body.light-theme .close {
+        color: #011627;
+        }
+
+        body.light-theme .blogsPage {
+            background-color: #cbd5e1;
+        }
+
+        body.light-theme .blogsPage .content h1 {
+            color: #011627;
+        }
+
     </style>
 </head>
 <body>
@@ -180,8 +225,8 @@
                 <a href="homepage.html">Home</a>
                 <a href="homepage.html#about">About</a>
                 <a href="homepage.html#skills">Skills</a>
-                <a href="portifolio.html">Projects</a>
-                <a href="#blogs" class="active">Blogs</a>
+                <a href="homepage.html#projects">Projects</a>
+                <a href="homepage.html#blogs" class="active">Blogs</a>
                 <a href="homepage.html#contact">Contact</a>
             </nav>
             <div class="menu" id="menu">
@@ -191,7 +236,15 @@
                 &times;
             </div>
             <div class="theme-toggler" id="theme-toggler">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" viewBox="0 -1 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 1 1 7.072 0l-.548.547A3.37 3.37 0 0 0 14 18.469V19a2 2 0 1 1-4 0v-.531c0-.895-.356-1.754-.988-2.386z"/></svg>
+                <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="50" height="40" viewBox="0 -1 24 24">
+                    <path id="icon-path"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" />
+                </svg>
             </div>
     </header>
 

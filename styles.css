@@ -13,6 +13,7 @@ body {
   color: #cbd5e1;
 }
 
+
 /*navbar-styles*/
 .homepage {
   position: fixed;
@@ -149,7 +150,7 @@ body {
   .navbar a:hover,
   .navbar a.active{
     text-decoration: none;
-    color: #011627;  
+    color: #00bcd4;  
     font-size: 30px;
     font-weight: 700;
     transition: color 0.3s;
@@ -870,7 +871,8 @@ body {
   height: 470px;
   border-radius: 21px;
   padding: 20px;
-  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1614,4 +1616,178 @@ footer a {
         right: 20px;
     }
   
+}
+
+
+/* Light theme */
+body.light-theme {
+    background-color: #cbd5e1;
+    color: #011627;
+}
+
+body.light-theme .brand {
+    color: #011627;       
+}
+
+body.light-theme .logo {
+    background-color: #011627;
+    color: #cbd5e1;            
+}
+
+body.light-theme .navbar a {
+  color: #011627;
+}
+
+.body.light-theme .navbar a:hover,
+.body.light-theme .navbar a.active{
+    color: #011627;
+}
+
+@media screen {
+  .body.light-theme .navbar a:hover,
+  .body.light-theme .navbar a.active{
+    color: #011627;
+ }
+}
+
+body.light-theme .menu,
+body.light-theme .close {
+  color: #011627;
+}
+
+body.light-theme .about {
+  color: #011627;
+}
+
+body.light-theme .skill-item {
+  background-color: #00bcd4;
+}
+
+body.light-theme .projects {
+  background-color: #cbd5e1;
+}
+
+body.light-theme .projects .content h1 {
+  color: #011627;
+}
+
+body.light-theme .anIdeas {
+  background-color: #00bcd4;
+  color: #cbd5e1;
+}
+
+body.light-theme .contactBtn {
+  background-color: transparent;
+  color: #cbd5e1;
+  border: 3px solid #cbd5e1;
+  
+}     
+
+body.light-theme .contactBtn:hover {
+  background-color: #011627;
+  color: #cbd5e1;
+}
+
+body.light-theme .blogs {
+  background-color: #cbd5e1;
+}
+
+body.light-theme .blogs .content h1 {
+  color: #011627;
+}
+
+body.light-theme .contact {
+  background-color: #cbd5e1;
+}
+
+body.light-theme .contact .content h1 {
+  color: #011627;
+}
+
+body.light-theme .container .contactInfo .box .icon {
+  background: repeating-conic-gradient(from 27.5deg, #011627 0%, #011627 10%, transparent 10%, transparent 50%);
+}
+
+body.light-theme .container .contactInfo .box .icon::before {
+  background: repeating-conic-gradient(from 117.5deg, #011627 0%, #011627 10%, transparent 10%, transparent 50%);
+}
+
+body.light-theme .container .contactInfo .box .icon::after {
+  background: #cbd5e1;
+}
+
+body.light-theme .container .contactInfo .box .text { 
+  color: #011627;
+}
+
+body.light-theme .container .contactInfo .box .text h3 {
+  color: #011627;
+}
+
+body.light-theme .container .contactInfo .txt {
+  color: #011627;
+  border-left: 50px solid #011627;
+}
+
+body.light-theme .container .contactInfo .sci li a {
+  color: #011627;
+}
+
+body.light-theme .container .contactForm {
+  background: repeating-conic-gradient(from var(--a), #011627 0%, #011627 10%, transparent 10%, transparent 50%);
+}
+
+body.light-theme .container .contactForm::before {
+  background: repeating-conic-gradient(from var(--a), #011627 0%, #011627 10%, transparent 10%, transparent 50%);
+}
+
+body.light-theme .container .contactForm::after {
+  border: 20px solid #cbd5e1;
+  background: #cbd5e1;
+}
+
+body.light-theme .container .contactForm form h2 {
+  color: #011627;
+}
+
+body.light-theme .container .contactForm form .inputBox input,
+body.light-theme .container .contactForm form .inputBox textarea {
+  border-bottom: 2px solid #011627;
+  color: #00bcd4;
+}
+
+body.light-theme .container .contactForm form .inputBox span {
+  color: #011627;
+}
+
+body.light-theme .container .contactForm form .inputBox input:focus ~ span,
+body.light-theme .container .contactForm form .inputBox textarea:focus ~ span,
+body.light-theme .container .contactForm form .inputBox input:valid ~ span,
+body.light-theme .container .contactForm form .inputBox textarea:valid ~ span {
+  color: #00bcd4;
+}
+
+
+body.light-theme .container .contactForm form .inputBox input[type="submit"] {
+  color: #cbd5e1;
+  background: #011627;
+}
+
+body.light-theme .container .contactForm form .inputBox input[type="submit"]:hover {
+  background: #00bcd4;
+  color: #011627;
+}
+
+body.light-theme footer {
+  background-color: #cbd5e1;
+  color: #011627;
+}
+
+body.light-theme footer a {
+  color: #00bcd4;
+}
+
+body.light-theme #backToTop:hover {
+    background: #011627;
+    color:#cbd5e1;
 }
