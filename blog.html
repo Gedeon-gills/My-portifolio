@@ -8,199 +8,50 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family :   'Poppins',sans-serif;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family :   'Poppins',sans-serif; }
+        body { background-color: #011627;  color: #cbd5e1; }
+        body { overflow-x: hidden; }
 
-
-        body {
-            background-color: #011627; 
-            color: #cbd5e1;
-        }
-
-        body {
-            overflow-x: hidden;
-        }
-
-        .blogsPage {
-            position: relative;
-            min-height: 100vh;
-            padding: 100px 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            background-color: #011627;
-        }
-
-        .blogsPage .content {
-            max-width: 800px;
-            text-align: center;
-        }
-
-
-        .blogsPage .content h1 {
-            font-size: 56px;
-            font-weight: 700;
-            line-height: 1.2;
-            color: #cbd5e1;
-        }
-
-        .blogsPage .content p {
-            color:#00bcd4;
-            font-size: 1.1em;
-            font-weight: 300;
-            margin-top: 20px;
-        }
-
-        .blogPage-container {
-            max-width: 1200px;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, 320px);
-            gap: 60px;
-            width: 100%;
-            margin: 40px auto 0 auto;  
-            padding: 0 20px;           
-            justify-content: center; 
-        }
-
-        .blogPage-item {
-            background-color: #cbd5e1;
-            color: #011627;
-            width: 320px;
-            height: 370px;
-            border-radius: 35px;
-            padding: 20px;
-            margin-top: 80px;
-            box-shadow: 4px 4px 4px #39367D;
-        }
-
-        .blogPage-item:hover {
-            height: 420px;
-            box-shadow: 4px 4px 4px 2px #39367D;
-        }
-
-        .blogsPage img {
-            width: 300px;
-            height: 200px;
-            margin-top: -12px;
-            margin-bottom: -8px;
-            margin-left: -9px;
-            border-radius: 32px;
-        }
-
-        .blogsPage1Img {
-                height: 200px;   
-                object-fit: cover; 
-                width: 100%;       
-        }
-
-        .blogspage3Img {
-                height: 200px;   
-                object-fit: cover; 
-                width: 100%;       
-        }
-
-
-        .blogPage-item p {
-            margin-top: 15px;
-            font-size: 17px;
-            font-weight: 500;
-            color: #777777;
-        }
-
-
-        .blogPage-item h3 {
-            margin-top: 10px;
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 1.2;
-        }
-
-
+        .blogsPage { position: relative; min-height: 100vh; padding: 100px 100px; display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: #011627; }
+        .blogsPage .content { max-width: 800px; text-align: center; }
+        .blogsPage .content h1 { font-size: 56px; font-weight: 700; line-height: 1.2; color: #cbd5e1; }
+        .blogsPage .content p { color:#00bcd4; font-size: 1.1em; font-weight: 300; margin-top: 20px; }
+        .blogPage-container { max-width: 1200px; display: grid; grid-template-columns: repeat(auto-fill, 320px); gap: 60px; width: 100%; margin: 40px auto 0 auto; padding: 0 20px; justify-content: center;  }
+        .blogPage-item { background-color: #cbd5e1; color: #011627; width: 320px; height: 370px; border-radius: 35px; padding: 20px; margin-top: 80px; box-shadow: 4px 4px 4px #39367D; }
+        .blogPage-item:hover { height: 420px; box-shadow: 4px 4px 4px 2px #39367D; }
+        .blogsPage img { width: 300px; height: 200px; margin-top: -12px; margin-bottom: -8px; margin-left: -9px; border-radius: 32px; }
+        .blogsPage1Img { height: 200px; object-fit: cover;  width: 100%; }
+        .blogspage3Img { height: 200px;    object-fit: cover; width: 100%; }
+        .blogPage-item p { margin-top: 15px; font-size: 17px; font-weight: 500; color: #777777; }
+        .blogPage-item h3 { margin-top: 10px; font-size: 18px; font-weight: 500; line-height: 1.2; }
         .blogPage-item .buttons a {
-            position: relative;
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            background-color: transparent;
-            color: #00bcd4;
-            border: 2px solid #00bcd4;
-            border-radius: 8px;
-            width: 150px;
-            height: 30px;
-            font-size: 15px;
-            font-weight: 600;
-            text-decoration: none;
-            letter-spacing: 1px;
-            margin-top: 12px;
-            margin-left: -2px;
-            z-index: 1;
+            position: relative; display: inline-flex; justify-content: center; align-items: center; background-color: transparent; color: #00bcd4; border: 2px solid #00bcd4;
+            border-radius: 8px; width: 150px; height: 30px; font-size: 15px; font-weight: 600; text-decoration: none; letter-spacing: 1px; margin-top: 12px; margin-left: -2px; z-index: 1; 
         }
 
-        .blogPage-item .buttons a:hover {
-            background-color: #00bcd4;
-            color: #011627;
-        }
+        .blogPage-item .buttons a:hover { background-color: #00bcd4; color: #011627; }
 
-        .blogButtonsPage a {
-            position: relative;
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #00bcd4;
-            color: #011627;
-            border-radius: 8px;
-            width: 180px;
-            height: 60px;
-            font-size: 20px;
-            font-weight: 800;
-            text-decoration: none;
-            letter-spacing: 1px;
-            margin-top: 90px;
-            margin-left: auto;
-            z-index: 1;
+        .blogButtonsPage a { position: relative; display: inline-flex; justify-content: center; align-items: center; background-color: #00bcd4; color: #011627; 
+            border-radius: 8px; width: 180px; height: 60px; font-size: 20px; font-weight: 800; text-decoration: none; letter-spacing: 1px; margin-top: 90px; margin-left: auto; z-index: 1; 
         }
-
-        .blogButtonsPage a:hover {
-            background-color: #cbd5e1;
-            color: #011627;
-            border: 2px solid #00bcd4;
-        }
-
+        .blogButtonsPage a:hover { background-color: #cbd5e1; color: #011627; border: 2px solid #00bcd4; }
+        
         /* light-theme */
-
-        body.light-theme {
-            background-color: #cbd5e1;
-            color: #011627;
-        }
-
-        body.light-theme .brand {
-            color: #011627;       
-        }
-
-        body.light-theme .logo {
-            background-color: #011627;
-            color: #cbd5e1;            
-        }
-
-        body.light-theme .navbar a {
-        color: #011627;
-        }
+        body.light-theme { background-color: #cbd5e1; color: #011627; }
+        body.light-theme .brand { color: #011627; }
+        body.light-theme .logo { background-color: #011627; color: #cbd5e1; }
+        body.light-theme .navbar a { color: #011627; }
 
         .body.light-theme .navbar a:hover,
-        .body.light-theme .navbar a.active{
-            color: #011627;
-        }
+        .body.light-theme .navbar a.active{ color: #011627; }
+
+        .scroll-text { max-height: 250px; overflow-y: auto; padding-right: 10px; }
 
         @media screen {
-        .body.light-theme .navbar a:hover,
-        .body.light-theme .navbar a.active{
-            color: #011627;
-        }
+            .body.light-theme .navbar a:hover,
+            .body.light-theme .navbar a.active{
+                color: #011627;
+            }
         }
 
         body.light-theme .menu,
@@ -294,7 +145,11 @@
             <div class="modal-content">
                 <a href="#blogItem1" class="closeBlo">×</a>
                 <h2>Designing Engaging User Interfaces</h2>
-                <p>Here is the full description about blog 1...</p>
+                <p class="scroll-text">
+                    Designing engaging user interfaces for modern websites goes far beyond creating attractive layouts <br><br> it requires a deep understanding of how users think, behave, and interact with digital environments. <br><br> A well-designed UI balances visual appeal with functional clarity, ensuring that every button, animation, and navigation element supports the user’s journey. <br><br> Modern interfaces rely on simple but powerful design principles: a strong visual hierarchy that directs attention, responsive layouts that adapt gracefully across all screen sizes, and smooth interactions that provide immediate feedback.
+                    An effective UI also values accessibility, making sure that users with different abilities can comfortably navigate and understand the content. <br><br>Designers must consider contrast, readable typography, logical structure, and alternative interaction methods to create an inclusive experience.<br><br>
+                    In addition, the performance of the interface plays a huge role in user engagement. Fast load times, optimized media, and efficient code ensure that users can explore content effortlessly. <br><br> When aesthetics, usability, accessibility, and performance come together, the result is a user interface that feels natural, delightful, and trustworthy one that keeps users engaged and encourages them to return.
+                </p>
             </div>
         </div>
 
@@ -303,7 +158,21 @@
             <div class="modal-content">
                 <a href="#blogItem2" class="closeBlo">×</a>
                 <h2>Effective Dashboard Layouts</h2>
-                <p>Full details about blog 2...</p>
+                <p class="scroll-text">
+                    Designing effective dashboard layouts requires a thoughtful balance between clarity, simplicity, and visual organization. <br><br>
+                    Dashboards are meant to transform complex data into insights that users can understand at a glance, so every element must be purposeful and easy to interpret. <br><br>
+                    A well designed dashboard uses a clear visual hierarchy, grouping related data and placing the most important metrics at the top where attention naturally falls. <br><br>
+                    Strategic use of charts, icons, and color coding helps users analyze information quickly without feeling overwhelmed, while maintaining a clean and minimal layout. <br><br>
+
+                    Responsive design is essential, ensuring the dashboard adapts smoothly to different screen sizes from desktops to mobile devices without losing readability. <br><br>
+                    Consistency in spacing, typography, and color creates a unified appearance, guiding users intuitively through each section of the interface. <br>
+                    Interactive elements such as filters, toggles, and tooltips enhance usability, allowing users to explore data more deeply without cluttering the main view. <br><br>
+
+                    Performance also plays a major role in dashboard design. <br>
+                    Fast rendering of data, optimized components, and efficient loading ensure that users can interact with metrics instantly and confidently. <br><br>
+                    When thoughtful structure, intuitive navigation, and smooth performance come together, dashboard layouts become powerful tools that help users make informed decisions quickly and effortlessly. <br><br>
+                    An effective dashboard is not just visually appealing it is a smart, purposeful system designed to deliver clarity and insight at every moment.
+                </p>
             </div>
         </div>
 
@@ -312,7 +181,22 @@
             <div class="modal-content">
                 <a href="#blogItem3" class="closeBlo">×</a>
                 <h2>Visualization Techniques</h2>
-                <p>Full description for blog 3...</p>
+                <p class="scroll-text">
+                    Effective data visualization techniques play a crucial role in transforming raw information into clear, meaningful insights that users can understand at a glance. <br><br>
+                    Great visualizations begin with choosing the right chart or graphic for the data—line charts for trends, bar charts for comparisons, pie charts for proportions, and heatmaps for patterns. <br>
+                    Each type of visualization must serve a purpose, helping users interpret information quickly without confusion or unnecessary complexity. <br><br>
+
+                    A strong visual hierarchy guides the eye naturally, emphasizing key metrics and reducing cognitive load. <br>
+                    Color is also a powerful tool, helping distinguish categories, highlight important values, and draw attention to trends—when used carefully and consistently. <br>
+                    Typography, spacing, and layout structure must remain clean and minimal so that users focus on the data itself, not the decoration around it. <br><br>
+
+                    Interactivity enhances modern visualization, allowing users to hover, filter, zoom, or drill down into specific details. <br>
+                    This turns a static display into a dynamic exploration tool, giving users deeper control and a more personalized experience. <br>
+                    Equally important is ensuring accessibility by providing clear labels, readable scales, and alternative cues for users who may have visual impairments. <br><br>
+
+                    Performance optimization ensures visualizations render smoothly, even when handling large data sets. <br>
+                    When clarity, interactivity, accessibility, and performance come together, visualization techniques become powerful tools for storytelling helping users uncover insights, make informed decisions, and better understand the information before them.
+                </p>
             </div>
         </div>
     </section>
