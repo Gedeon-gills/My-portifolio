@@ -4,9 +4,154 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family : 'Poppins',sans-serif; }
+        body { background-color: #011627;  color: #cbd5e1; }
+
+
+        /*navbar-styles*/
+        .homepage {
+        position: fixed;
+        top: 0;
+        left:0;
+        width: 100%;
+        padding: 20px 10%;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+        }
+
+        .brand {
+        position: relative;
+        font-size: 40px;
+        font-weight: 700;
+        display: flex;
+        color: #cbd5e1;
+        text-decoration:none;
+        align-items: center;
+        gap: 15px;
+        }
+
+        .logo {
+            background-color: #cbd5e1;
+            color: #011627;
+            padding: 6px 20px;
+            font-size: 40px;
+            font-weight: 700;
+            border-radius: 50%;
+        }
+
+        .navbar {
+        display: flex;
+        gap: 20px;
+        }
+
+        .navbar a {
+        font-size: 18px;
+        color: #cbd5e1;
+        text-decoration: none;
+        font-weight: 500;
+        list-style: none;
+        margin-left: 35px;
+        transition: 0.3s;
+        }
+
+        .navbar a:hover,
+        .navbar a.active{
+        text-decoration: none;
+        color: #00bcd4;   
+        font-size: 30px;
+        font-weight: 700;
+        transition: color 0.3s;
+        }
+
+        .menu,
+        .close {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 28px;
+        cursor: pointer;
+        z-index: 1001;
+        color: #cbd5e1;
+        }
+
+        .menu { display: none; }
+        .close { display: none; }
+
+        .theme-toggler {
+            position: absolute;
+            display: block; 
+            top: 20px;
+            right: 30px;
+            padding: 2px 10px;
+            border-radius: 5px;
+            background: #00bcd4;
+            color: #cbd5e1;
+        }
+
+
+        @media (max-width: 768px) {
+            .navbar {
+                display: none; 
+            }
+
+            .brand {
+                font-size: 28px;
+                top: 0;
+                right: 0;
+                padding: 5px 30%;
+                gap: 10px;
+            }
+
+            .logo {
+                font-size: 28px;
+                padding: 4px 14px;
+            }
+
+            .menu {
+                display: block; 
+            }
+
+            .theme-toggler {
+                position: absolute;
+                display: block; 
+                top: 20px;
+                right: 20px;
+                padding: 2px 10px;
+                border-radius: 5px;
+                background: #00bcd4;
+                color: #cbd5e1;
+                cursor: pointer;
+            }
+
+            .navbar.open {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                background-color: #45a7b4;
+                color: #011627;
+                border-radius: 10px;
+                top: 0;
+                left:0;
+                height: 100vh;
+                width: 100%;
+                padding: 18px 15px;
+                margin: 25px;
+            }
+
+            .navbar a:hover,
+            .navbar a.active{
+                text-decoration: none;
+                color: #00bcd4;  
+                font-size: 30px;
+                font-weight: 700;
+                transition: color 0.3s;
+            }
+        }
         .portifolios { position: relative; min-height: 100vh; padding: 100px 100px; display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: #011627; }
         .portifolios .content { max-width: 800px; text-align: center; }
         .portifolios .content h1 { font-size: 56px; font-weight: 700; line-height: 1.2; color: #cbd5e1; }
@@ -34,6 +179,166 @@
 
         .proButtons a:hover { background-color: #cbd5e1; color: #011627; border: 2px solid #00bcd4; }
 
+        .anIdeas {
+            background-color: #cbd5e1;
+            color: #011627;
+            width: 1895px;
+            height: 470px;
+            border-radius: 21px;
+            padding: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .anIdeas h2 {
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .anIdeas p {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-top: 15px;
+        }
+
+        .contactBtn {
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            color: #00bcd4;
+            border: 3px solid #00bcd4;
+            border-radius: 12px;
+            width: 300px;
+            height: 70px;
+            font-size: 22px;
+            font-weight: 700;
+            text-decoration: none;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            margin-left: -2px;
+            z-index: 1;
+        }     
+
+        .contactBtn:hover {
+            background-color: #00bcd4;
+            color: #011627;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            .anIdeas {
+                width: 380px;
+                height: auto;
+                margin-top: 40px;
+                padding: 15px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .anIdeas h2 {
+                font-size: 24px;
+            }
+
+            .anIdeas p {
+                font-size: 11px;
+            }
+
+            .contactBtn {
+                width: 200px;
+                height: 50px;
+                font-size: 16px;
+                margin-top: 20px;
+            }
+            
+        }
+
+        footer {
+            position: relative;
+            width: 100%;
+            padding: 20px 10%;
+            background-color: #011627;
+            color: #cbd5e1;
+            text-align: center;
+        }
+        footer p {
+            
+        }
+        footer a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+
+        /* End of footer styles */
+
+        #backToTop {
+            position: fixed;
+            bottom: 35px;
+            right: 35px;
+            width: 70px;
+            height: 70px;
+            background: var(--primary-color, #00bcd4);
+            color: #011627;
+            border: none;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 45px;
+            cursor: pointer;
+            opacity: 0;
+            pointer-events: none;
+            transition: 0.3s ease;
+            z-index: 999;
+        }
+
+        #backToTop.show {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        #backToTop:hover {
+            background: #cbd5e1;
+        }
+
+        @media screen and (max-width: 600px) {
+            #backToTop {
+                bottom: 20px;
+                right: 20px;
+            }
+        
+        }
+
+        body.light-theme { background-color: #cbd5e1; color: #011627; }
+        body.light-theme .brand { color: #011627; }
+        body.light-theme .logo { background-color: #011627; color: #cbd5e1; }
+
+        body.light-theme .navbar a { color: #011627; }
+        .body.light-theme .navbar a:hover,
+        .body.light-theme .navbar a.active{ color: #011627; }
+
+        @media screen {
+            .body.light-theme .navbar a:hover,
+            .body.light-theme .navbar a.active{ color: #011627; }
+        }
+
+        body.light-theme .menu,
+        body.light-theme .close { color: #011627; }
+
+        body.light-theme .portifolios { background-color: #cbd5e1; }
+        body.light-theme .portifolios .content h1 { color: #011627; }
+        body.light-theme .anIdeas { background-color: #00bcd4; color: #cbd5e1; }
+
+        body.light-theme footer { background-color: #cbd5e1; color: #011627; }
+        body.light-theme footer a { color: #00bcd4; }
+        body.light-theme #backToTop:hover { background: #011627; color:#cbd5e1; }
     </style>
 </head>
 <body>
