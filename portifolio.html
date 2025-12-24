@@ -6,6 +6,35 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .portifolios { position: relative; min-height: 100vh; padding: 100px 100px; display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: #011627; }
+        .portifolios .content { max-width: 800px; text-align: center; }
+        .portifolios .content h1 { font-size: 56px; font-weight: 700; line-height: 1.2; color: #cbd5e1; }
+        .portifolios .content p { color:#00bcd4; font-size: 1.1em; font-weight: 300; margin-top: 20px; }
+        .portifolios-container { display: flex; justify-content: center; align-items: flex-start; flex-wrap: wrap; gap: 100px; margin-top: 40px; }
+        .portifolios-item { background-color: #cbd5e1; color: #011627; width: 300px; height: 420px; border-radius: 21px; padding: 20px; margin-top: 80px; box-shadow: 4px 4px 4px #39367D; }
+        .portifolios-item:hover { height: 440px; box-shadow: 4px 4px 4px 2px #39367D; }
+        .portifolios img { width: 280px; height: 210px; margin-top: -12px; margin-bottom: -8px; margin-left: -9px; border-radius: 15px; }
+        .project2Img { height: 210px; object-fit: cover;  width: 100%; }
+
+        .project1Title { margin-top: 15px; font-size: 24px; font-weight: 800; }
+        .project2Title { margin-top: 15px; font-size: 21px; font-weight: 800; }
+        .project3Title { margin-top: 15px; font-size: 24px; font-weight: 800; }
+
+        .portifolios-item p { margin-top: 10px; font-size: 12px; font-weight: 400; line-height: 1.2; }
+        .portifolios-item .buttons a {
+            position: relative; display: inline-flex; justify-content: center; align-items: center; background-color: transparent; color: #00bcd4; border: 2px solid #00bcd4; border-radius: 8px;
+            width: 200px; height: 40px; font-size: 19px; font-weight: 600; text-decoration: none; letter-spacing: 1px; margin-top: 15px; margin-left: -2px; z-index: 1;
+        }
+        .portifolios-item .buttons a:hover { background-color: #00bcd4; color: #011627; }
+        .proButtons a {
+            position: relative; display: inline-flex; justify-content: center; align-items: center; background-color: #00bcd4; color: #011627; border-radius: 8px; 
+            width: 180px; height: 60px; font-size: 20px; font-weight: 800; text-decoration: none; letter-spacing: 1px; margin-top: 90px; margin-left: auto; z-index: 1;
+        }
+
+        .proButtons a:hover { background-color: #cbd5e1; color: #011627; border: 2px solid #00bcd4; }
+
+    </style>
 </head>
 <body>
 <header class="homepage"> 
@@ -37,17 +66,17 @@
             </div>
 </header>
 
-<section class="projects" id="projects">
+<section class="portifolios" id="portifolios">
         <div class="content">
             <h1>Portifolio</h1>
             <p class="title">Here's a selection of my recent work, showcasing my skills in 
                 creating user-centric and visually appealing interfaces.
             </p>
         </div>
-        <div class="project-container">
-            <div class="project-item">
+        <div class="portifolios-container">
+            <div class="portifolios-item">
                 <img src="https://github.com/Gedeon-gills/My-portifolio/blob/main/assets/Screenshot%202025-12-11%20150731.png?raw=true" alt="Project 1">
-                <div class="project-info">
+                <div class="portifolios-info">
                     <h3 class="project1Title" >Finance Tracker App </h3>
                     <p>
                         A user-friendly application that helps<br>you monitor daily income and expenses,<br>track budgets, analyze spending habits,<br>know your Balance and manage financial goals with ease.
@@ -57,9 +86,9 @@
                     </div>
                 </div>
             </div>
-            <div class="project-item">
+            <div class="portifolios-item">
                 <img src="https://github.com/Gedeon-gills/My-portifolio/blob/main/assets/Screenshot%202025-12-24%20124516.png?raw=true" alt="Project 2" class="project2Img">
-                <div class="project-info">
+                <div class="portifolios-info">
                     <h3 class="project2Title" >Ishema foundation web </h3>
                     <p>A user-friendly web platform designed<br>to support communities in need through<br> education, healthcare, and sustainable<br>development initiatives, empowering them<br>to build stronger and brighter futures.
                     </p>
@@ -68,9 +97,9 @@
                     </div>
                 </div>
             </div>
-            <div class="project-item">
+            <div class="portifolios-item">
                 <img src="https://github.com/Gedeon-gills/My-portifolio/blob/main/assets/Screenshot%202025-12-24%20123602.png?raw=true" alt="Project 1">
-                <div class="project-info">
+                <div class="portifolios-info">
                     <h3 class="project1Title" >Novocabo blog page</h3>
                     <p>
                         A clean, responsive interface designed to help readers browse, explore, and follow Cabo Delgado news, with real-time story updates to keep audiences informed and engaged.
