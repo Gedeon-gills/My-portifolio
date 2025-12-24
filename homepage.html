@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
 </head>
 <body>
     <header class="homepage"> 
@@ -397,6 +396,38 @@
         <p>Contact: <a href="mailto:ndagedeo061@gmail.com">ndagedeo061@gmail.com</a></p>
     </footer>
     <button id="backToTop"><i class='bx bx-up-arrow-alt'></i></button>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+        // Initialize EmailJS
+        emailjs.init("E8FOVAeX8e_Ct4v7l"); // Replace with your PUBLIC KEY
+
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const form = this;
+
+            const formData = {
+                user_name: form.user_name.value,
+                user_email: form.user_email.value,
+                message: form.message.value,
+                time: new Date().toLocaleString()
+            };
+
+            emailjs
+                .send("service_k40cbcl", "template_izn2avh", formData)
+                .then(() => {
+                    alert("Message Sent Successfully!");
+                    form.reset();
+                })
+                .catch((error) => {
+                    console.error("EmailJS Error:", error);
+                    alert("Failed to send message. Please try again.");
+                });
+        });
+    </script>
 </body>
 <script src="script.js"></script>
 </html>
