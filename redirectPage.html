@@ -1,115 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family :   'Poppins',sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirecting...</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
 
+    body {
+        background-color: #011627;
+        color: #cbd5e1;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
 
-        body {
-            background-color: #011627; 
-            color: #cbd5e1;
-        }
+    .stroked-rectangle {
+        width: 80%;
+        max-width: 800px;
+        height: 70%;
+        max-height: 500px;
+        background-color: transparent;
+        border: 3px solid #cbd5e1;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        position: relative;
+        text-align: center;
+    }
 
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .logo-circle {
+        background-color: #cbd5e1;
+        color: #011627;
+        padding: 10px 20px;
+        font-size: 40px;
+        font-weight: 700;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-text {
+        font-size: 36px;
+        font-weight: 700;
+        color: #cbd5e1;
+    }
+
+    .message {
+        font-size: 48px;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+
+    .countdown {
+        font-size: 36px;
+        margin-top: 20px;
+        color: #ff9f1c;
+    }
+
+    @media (max-width: 600px) {
         .stroked-rectangle {
-            width: 1530px;
-            height: 850px; 
-            background-color: transparent; 
-            border: 3px solid #cbd5e1;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            width: 90%;
+            height: 60%;
         }
 
-        .branded {
-            position: absolute;
-            top: 37%;
-            left: 43%;
+        .logo-circle {
+            font-size: 28px;
+            padding: 8px 16px;
         }
 
-        .myLogo {
-            position: relative;
-            font-size: 40px;
-            font-weight: 700;
-            display: flex;
-            color: #cbd5e1;
-            text-decoration:none;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .logo {
-            background-color: #cbd5e1;
-            color: #011627;
-            padding: 6px 20px;
-            font-size: 40px;
-            font-weight: 700;
-            border-radius: 50%;
+        .logo-text {
+            font-size: 28px;
         }
 
         .message {
-            position: absolute;
-            top: 53%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 72px;
+            font-size: 28px;
         }
-        @media (max-width: 900px) {
-            .stroked-rectangle {
-                width: 300px;
-                height: 660px; 
-            }
-            .message {
-                font-size: 32px;
-            }
-            .branded {
-                top: 30%;
-                left: 50%;
-                transform: translateX(-50%);
-            }
+
+        .countdown {
+            font-size: 24px;
         }
-    </style>
+    }
+</style>
 </head>
 <body>
-    <div class="stroked-rectangle"></div>
-    <div class="branded"><a class="myLogo"><span class="logo">G</span>Gedeon</a></div>
-    <h2 class="message">Welcome to My </h2>
-    <h2 class="message" style="top: 63%;">Portifolio</h2>
-    <script>
-        let countdown = 1;
-        const countdownElement = document.createElement('div');
-        countdownElement.style.position = 'absolute';
-        countdownElement.style.top = '75%';
-        countdownElement.style.left = '50%';
-        countdownElement.style.transform = 'translate(-50%, -50%)';
-        countdownElement.style.fontSize = '48px';
-        document.body.appendChild(countdownElement);
-        const interval = setInterval(() => {
-            countdownElement.textContent = `Redirecting in ${countdown}...`;
-            countdown--;
-            if (countdown < 0) {
-                clearInterval(interval);
-            }
-        }, 2000);
+    <div class="stroked-rectangle">
+        <div class="logo-container">
+            <div class="logo-circle">G</div>
+            <div class="logo-text">Gedeon</div>
+        </div>
+        <div class="message">Welcome to My</div>
+        <div class="message">Portfolio</div>
+        <div class="countdown" id="countdown">Redirecting in 3...</div>
+    </div>
 
-        function redirectToPortfolio() {
-            setTimeout(function() {
-                window.location.href = "homepage.html";
-            }, 5000);
+<script>
+    let countdown = 3;
+    const countdownElement = document.getElementById('countdown');
+
+    const interval = setInterval(() => {
+        countdownElement.textContent = `Redirecting in ${countdown}...`;
+        countdown--;
+        if(countdown < 0){
+            clearInterval(interval);
+            window.location.href = "homepage.html"; // Redirect
         }
-        redirectToPortfolio();
-    </script>
+    }, 1000);
+</script>
 </body>
 </html>
