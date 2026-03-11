@@ -165,16 +165,20 @@ body {
   padding: 8rem 10% 2rem;
   margin: 0 auto;   
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
   box-sizing: border-box;
 }
 
 .hero-content {
   max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
 .hero-text {
-   margin-top: 15px;
+   margin-top: 10px;
+   order: 2;
 }
 .hero-content h1 {
   position: relative;
@@ -245,7 +249,7 @@ body {
 .hero-content p {
   position: relative;
   font-size: 16px;
-  margin: 20px 0 40px 
+  margin: 18px 0 30px;
 }
 
 
@@ -302,17 +306,19 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: 345px;
-  height:50px;
+  width: 330px;
+  height: 50px;
+  gap: 10px;
 }
 
 .hero-sci {
   position: absolute;
-  bottom: 40px;
+  bottom: 50px;
   width: 220px;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 15px;
+  order: 3;
 }
 
 .hero-sci a {
@@ -359,6 +365,9 @@ body {
   }
 }
 
+.hero-image {
+  order: 1;
+}
 
 .hero-image .img-box {
   position: relative;
@@ -370,8 +379,10 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin-top: -460px;
-  margin-left: 975px;
+  margin-top: -100px;
+  margin-right: -70%;
+  margin-left: auto;
+  z-index: 5;
 }
 
 .hero-image .img-box::before,
@@ -413,7 +424,7 @@ body {
   top: 0;
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   mix-blend-mode: lighten;
 }
@@ -422,17 +433,23 @@ body {
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 6rem 5% 2rem;  
-    margin-top: 60px; 
+    padding: 9rem 5% 2rem;  
+    margin-top: 60px;
+    gap: 0.5rem;
   }
 
   .hero-content {
     flex-direction: column;
     text-align: center;
+    gap: 1.5rem;
+    width: 100%;
   }
 
   .hero-image {
     padding-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   
@@ -440,25 +457,28 @@ body {
     width: 60vw;
     height: 60vw;
     margin: 20px auto 0;
-    margin-top: -290px;
+    margin-top: -100px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .hero-sci {
     position: static;
-    margin-top: -350px;
+    margin-top: 30px;
     width: 100%;
     justify-content: center;
+    gap: 12px;
   }
 
 
   .hero-text {
     flex-direction: column;
     text-align: center;
-    margin-top: 300px;
+    margin-top: 0;
   }
 
   .hero-content h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .hero-content h3 {
@@ -466,17 +486,22 @@ body {
   }
 
   .hero-content p {
-    font-size: 0.7rem;
+    font-size: 0.95rem;
   }
 
   .buttons a {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
+    width: 120px;
+    height: 40px;
   }
 
   .hero-content .buttons {
     width: 100%;
-    gap: 20px;
+    max-width: 300px;
+    gap: 12px;
     justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
   }
 }
 
